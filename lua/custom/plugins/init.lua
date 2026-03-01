@@ -5,4 +5,12 @@
 
 ---@module 'lazy'
 ---@type LazySpec
-return {}
+return {
+  {
+    'goolord/alpha-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('custom.dashboard').setup()
+    end,
+  },
+}
