@@ -226,6 +226,9 @@ require('custom.project-tracker').setup()
 require('custom.telescope-unified').setup()
 vim.keymap.set('n', '<leader>t', '<cmd>TelescopeUnified<CR>', { noremap = true, silent = true, desc = 'Unified Telescope search' })
 
+-- Toggleable terminal setup
+require('custom.terminal').setup()
+
 -- Toggleable terminal
 vim.keymap.set('n', '<leader>term', '<cmd>ToggleTerminal<CR>', { noremap = true, silent = true, desc = 'Toggle terminal' })
 vim.keymap.set('t', '<leader>term', [[<C-\><C-n><cmd>ToggleTerminal<CR>]], { noremap = true, silent = true, desc = 'Toggle terminal' })
