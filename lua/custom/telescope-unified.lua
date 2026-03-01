@@ -1,8 +1,8 @@
 local M = {}
 
-local telescope = require('telescope.builtin')
-
 function M.setup()
+  local telescope = require('telescope.builtin')
+
   -- Create custom command for unified search
   vim.api.nvim_create_user_command('TelescopeUnified', function()
     -- Create picker with multiple search modes
