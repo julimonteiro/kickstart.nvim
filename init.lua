@@ -218,6 +218,20 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- [[ Custom Setup: Project Tracker and Additional Keybindings ]]
+-- Project tracking for dashboard history
+require('custom.project-tracker').setup()
+
+-- Unified Telescope command
+vim.keymap.set('n', '<leader>t', '<cmd>TelescopeUnified<CR>', { noremap = true, silent = true, desc = 'Unified Telescope search' })
+
+-- Toggleable terminal
+vim.keymap.set('n', '<leader>term', '<cmd>ToggleTerminal<CR>', { noremap = true, silent = true, desc = 'Toggle terminal' })
+vim.keymap.set('t', '<leader>term', [[<C-\><C-n><cmd>ToggleTerminal<CR>]], { noremap = true, silent = true, desc = 'Toggle terminal' })
+
+-- Claude Code integration
+vim.keymap.set('n', '<leader>cc', '<cmd>ClaudeCode<CR>', { noremap = true, silent = true, desc = 'Launch Claude Code' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
