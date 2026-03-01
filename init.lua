@@ -233,6 +233,9 @@ require('custom.terminal').setup()
 vim.keymap.set('n', '<leader>term', '<cmd>ToggleTerminal<CR>', { noremap = true, silent = true, desc = 'Toggle terminal' })
 vim.keymap.set('t', '<leader>term', [[<C-\><C-n><cmd>ToggleTerminal<CR>]], { noremap = true, silent = true, desc = 'Toggle terminal' })
 
+-- Claude Code integration setup
+require('custom.claude').setup()
+
 -- Claude Code integration
 vim.keymap.set('n', '<leader>cc', '<cmd>ClaudeCode<CR>', { noremap = true, silent = true, desc = 'Launch Claude Code' })
 
