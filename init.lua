@@ -222,7 +222,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Project tracking for dashboard history
 require('custom.project-tracker').setup()
 
--- Unified Telescope command
+-- Unified Telescope command setup
+require('custom.telescope-unified').setup()
 vim.keymap.set('n', '<leader>t', '<cmd>TelescopeUnified<CR>', { noremap = true, silent = true, desc = 'Unified Telescope search' })
 
 -- Toggleable terminal
